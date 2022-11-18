@@ -47,6 +47,7 @@
     font-size: 40px;
     line-height: 50px;
     color: #0B3246;
+   
   }
   &__subtitle {
     margin-top: 16px;
@@ -55,6 +56,15 @@
     font-size: 18px;
     line-height: 30px;
     color: #7D7D7D;
+    &::after {
+      content: '';
+      position: absolute;
+      right: -25%;
+      top: -59px;
+      width: 995px;
+      height: 550px;
+      background:url('../../img/titul__img.svg');
+    }
     span {
       color: #41B619;
     }
