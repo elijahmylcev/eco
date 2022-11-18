@@ -1,0 +1,51 @@
+.benefit {
+  padding-bottom: 200px;
+
+  &__title {
+    position: relative;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 54px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #464646;
+
+    &:before {
+      content: 'выгода';
+      position: absolute;
+      top: -47px;
+      font-weight: 900;
+      font-size: 144px;
+      line-height: 54px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: #7EDC5D;
+      opacity: 0.05;
+    }
+  }
+
+  &__nav {
+    .nav {
+      display: flex;
+      column-gap: 42px;
+      justify-content: flex-start;
+      &-link {
+        padding: 0 0 16px 0;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        color: #7D7D7D;
+        &.active {
+          border-bottom: 2px solid #41B619;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 28px;
+          letter-spacing: 0.02em;
+          color: #41B619;
+        }
+      }
+    }
+
+  }
+}
