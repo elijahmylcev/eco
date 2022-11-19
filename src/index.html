@@ -15,6 +15,59 @@
 </head>
 
 <body>
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content ">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body m-auto">
+					<img src="./img/3-x.png" alt="3-x">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="request" tabindex="-1" aria-labelledby="requestLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content wid">
+				<!-- <div class="d-block text-end p-3">
+				
+				</div> -->
+				<button type="button"  class="btn-close position-absolute inclos"  data-bs-dismiss="modal" aria-label="Close"></button>
+				<div class="row">
+					<div class="col-12 col-md-6">
+						<div class="modal-body pad">
+							<form class="modaleco">
+								<div class="modaleco__title">Экоипотека 0.1%</div>
+								<div class="modaleco__subtitle mb-4">Заполните контактные данные, чтобы получить по СМС топ 10 квартир, а также проверить свою кредитную историю и получить экспертную консультацию бесплатно.</div>
+								<div class="form-group">
+									<div class="mb-3">
+										<input type="text" name="name" required class="form-control" id="recipient-name" placeholder="Ваше имя">
+									</div>
+								
+								</div>
+								<div class="form-group">
+									<div class="mb-3">
+										<input type="phone" name="phone" required class="form-control" id="message-text" placeholder="Ваш номер телефона"></input>
+									</div>
+								</div>
+								<button type="submit" class="btn">Отправить</button>
+								<div class="modaleco__descr">Нажимая кнопку «Отправить», вы даёте своё согласие на обработку <a href="#">персональных данных</a></div>
+							</form>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="img"><img src="./img/fanny.png" alt="fanny"></div>
+					</div>
+				</div>
+				
+			
+				
+			</div>
+		</div>
+	</div>
+
 	<section class="titul">
 		<div class="container">
 			<nav class="titul__menu">
@@ -81,7 +134,8 @@
 								<p>Стоимость <br><span>2 650 000 ₽</span></p>
 							</div>
 							<div class="mininformation__el d-flex ">
-								<a class="mininformation__el_img" href=""><img src="./img/Vector.svg" alt="project"></a>
+								<a data-bs-toggle="modal" data-bs-target="#exampleModal" class="mininformation__el_img"
+									href="#exampleModal"><img src="./img/Vector.svg" alt="project"></a>
 								<p>Площадь <br><span>21,93 кв.м.</span></p>
 							</div>
 							<div class="mininformation__el">
@@ -185,7 +239,8 @@
 										</div>
 
 									</div>
-									<button class="eco__card_btn">Подать заявку</button>
+									
+									<a class="eco__card_btn" type="button" data-bs-toggle="modal"  data-bs-target="#request">Подать заявку</a>
 								</div>
 							</div>
 						</div>
@@ -605,8 +660,6 @@
 					</div>
 					<div class="wrapper__fon_gif">Место под гифку</div>
 
-
-
 				</div>
 			</div>
 		</div>
@@ -649,10 +702,11 @@
 					</div>
 					<div class="flat__price">Стоимость квартиры, млн. руб.</div>
 					<div class="flat__minmax">
-						<div class="flat__minmax_min">от <b>3.2</b>	  млн. руб.</div>
-						<div class="flat__minmax_max">до <b>5.4</b>  млн. руб.</div>
+
 					</div>
-					<div class="flat__scale"></div>
+					<div class="flat__scale">
+
+					</div>
 					<div class="flat__term">Срок сдачи</div>
 					<div class="flat__years">
 						<div class="flat__years_year">Заселён</div>
@@ -666,7 +720,7 @@
 					<img src="./img/ecoimg.png" alt="ecoimg">
 				</div>
 			</div>
-			
+
 		</div>
 
 
