@@ -77,6 +77,10 @@
         line-height: 20px;
         text-align: center;
         color: #FFFFFF;
+        &:hover{
+          background: #2D920A;
+          transition: all 200ms ease;
+        }
       }
       &_title{
         font-weight: 700;
@@ -127,6 +131,7 @@
     border-radius: 32px;
     &__card{
       &_btn{
+        padding: 18px 24px;
         margin-top: 24px;
         width: 350px;
         height: 56px;
@@ -137,6 +142,12 @@
         color: #41B619;
         border: 1px solid #41B619;
         border-radius: 20px;
+        &:hover{
+          background: #41B619;
+          color: #FFFFFF;
+          transition: all 200ms ease;
+        }
+     
       }
       &_title{
         font-weight: 700;

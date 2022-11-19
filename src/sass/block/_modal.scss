@@ -29,6 +29,7 @@
     color: #7D7D7D;
     a{
       color: #41B619;
+     
     }
   }
   .btn{
@@ -44,6 +45,10 @@
     line-height: 20px;
     text-align: center;
     color: #FFFFFF;
+    &:hover{
+      background: #2D920A;
+      transition: all 200ms ease;
+    }
   }
 }
 .pad {
@@ -63,3 +68,17 @@
   top: 20px;
   right: 20px;
 }
+.modalthink{
+  width: 766px;
+  height: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 12px 25px rgba(30, 58, 20, 0.1);
+  border-radius: 24px;
+  .think{
+    padding-top: 23px;
+    img{
+      transform: translateX(-50px);
+    }
+  }
+}
+
