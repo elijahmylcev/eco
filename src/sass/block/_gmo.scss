@@ -1,8 +1,17 @@
 .gmo{
   padding-top: 124px;
+  position: relative;
+  .ecoimg{
+    img{
+      position: absolute;
+      z-index: -1;
+      top: 94px;
+    }
+  }
   .flat{
     padding: 38px;
     width: 428px;
+    height: 592px;
     background: #FFFFFF;
     box-shadow: 0px 12px 25px rgba(30, 58, 20, 0.1);
     border-radius: 24px;
@@ -11,11 +20,21 @@
       content: '';
       position: absolute;
       z-index: -1;
-      right: 0;
-      top: 0;
+      left: -28px;
+      top: 70px;
       width: 322px;
-      height: 576px;
-      background:url('../../img/opasit.png');
+      height: 556px;
+      background: url('../img/opasit.png');
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      left: -58px;
+      top: 100px;
+      width: 322px;
+      height: 556px;
+      background: url('../img/fon.png');
     }
     &__title{
       font-weight: 700;
