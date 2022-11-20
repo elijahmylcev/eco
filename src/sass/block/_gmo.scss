@@ -1,11 +1,11 @@
 .gmo{
-  padding-top: 124px;
+  padding-top: 246px;
   position: relative;
   .ecoimg{
     img{
       position: absolute;
       z-index: -1;
-      top: 94px;
+      top: 208px;
     }
   }
   .flat{
@@ -34,7 +34,7 @@
       top: 100px;
       width: 322px;
       height: 556px;
-      background: url('../img/fon.png');
+      background: url('../../img/fon.svg');
     }
     &__title{
       font-weight: 700;

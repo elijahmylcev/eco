@@ -1,6 +1,16 @@
 .exam{
   padding-top: 169px;
   &__text{
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 767px;
+      height: 610px;
+      top: -36px;
+      left: 100%;
+      background: url('../img/exem.png');
+    }
     &_title{
       position:relative;
       font-weight: 700;
