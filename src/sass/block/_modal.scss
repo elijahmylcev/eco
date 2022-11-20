@@ -1,8 +1,8 @@
-.modaleco {
+// Стилизация текста внутри модальных окон
 
+.modaleco {
   input{
     padding: 10px 16px;
-    // gap: 10px;
     width: 350px;
     height: 56px;
     background: #F1F2F2;
@@ -52,11 +52,14 @@
     }
   }
 }
+
+// Стилизация padding внутри модального окно
 .pad {
   margin-top: 38px;
   padding: 0 38px 38px;
 }
 
+// Стилизация модального окна eco tuj его размеров
 .wid{
   width: 850px;
   height: 100%;
@@ -65,10 +68,13 @@
   border-radius: 24px;
 }
 
+// Cтилизация крестика у модальных окон
 .inclos{
   top: 20px;
   right: 20px;
 }
+
+// Стилизация модального окна обычной ипотеки
 .modalthink{
   width: 766px;
   height: 100%;

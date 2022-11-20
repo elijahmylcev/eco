@@ -39,6 +39,13 @@
           font-weight: 400;
           font-size: 16px;
           color: #464646;
+          &:hover{
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 28px;
+            color: #41B619;
+            transition: all 0.4s;
+          }
         }
       }
     }
@@ -55,7 +62,7 @@
     height: 550px;
     top: 43px;
     right: -290px;
-    background: url('../../img/titul_img.png');
+    background: url('../img/titul_img.png')no-repeat;
   }
   
 &__wrapper {

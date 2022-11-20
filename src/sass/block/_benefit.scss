@@ -1,197 +1,5 @@
 .benefit {
   padding-bottom: 200px;
-  .mininformation {
-    margin-top: 14px;
-    display: flex;
-    column-gap: 36px;
-    &__el{
-      column-gap: 10px;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 28px;
-      color: #464646;
-     
-      span{
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 28px;
-        letter-spacing: 0.02em;
-        color: #464646;
-      }
-      &_img{
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 46px;
-        height: 46px;
-        border: 1px solid #F1F2F2;
-        border-radius: 8px;
-        &:after{
-          content: '';
-          position: absolute;
-          top: 0;
-          width: 23px;
-          height: 23px;
-          background: url('../img/pointer.svg');
-          top: 33px;
-          right: -3px;
-        }
-      }
-    
-    }
-  }
-
-  
-  .eco {
-    margin: 10px;
-    padding: 24px;
-    max-width: 628px;
-    background:#E2F5DB;
-    border-radius: 32px;
-    position: relative;
-   
-    &__card{
-      &:after {
-        content: '';
-        display: block;
-        right: -185px;
-        position: absolute;
-        width: 415.14px;
-        height: 90%;
-        transform: rotate(6.4deg);
-        top: 252px;
-        background: url('../img/list_2.png') center;
-      }
-      &_btn{
-        padding: 18px 24px;
-        margin-top: 24px;
-        width: 350px;
-        height: 56px;
-        background: #41B619;
-        border-radius: 20px;
-        border: none;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 20px;
-        text-align: center;
-        color: #FFFFFF;
-        text-decoration: none;
-        &:hover{
-          background: #2D920A;
-          transition: all 200ms ease;
-        }
-      }
-      &_title{
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 54px;
-        letter-spacing: 0.02em;
-        color: #464646;
-      }
-      &_grid{
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(165px, 180px));
-        grid-template-rows: repeat(3, 96px);
-        grid-auto-flow: column;
-        column-gap: 40px;
-        row-gap: 18px;
-        &-bl{
-          &-title{
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 28px;
-            letter-spacing: 0.02em;
-            color: #464646;
-          }
-          &-number{
-            font-weight: 600;
-            font-size: 22px;
-            line-height: 28px;
-            letter-spacing: 0.02em;
-            color: #464646;
-          }
-          &-descr{
-            font-weight: 600;
-            font-size: 12px;
-            line-height: 28px;
-            letter-spacing: 0.02em;
-            color: #464646;
-
-          }
-        }
-      }
-    }
-  }
-  .wrapper{
-    margin: 10px;
-    padding: 24px;
-    max-width: 628px;
-    background: #F1F2F2;
-    border-radius: 32px;
-    &__card{
-      &_btn{
-        padding: 18px 24px;
-        margin-top: 24px;
-        width: 350px;
-        height: 56px;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 20px;
-        text-align: center;
-        color: #41B619;
-        border: 1px solid #41B619;
-        border-radius: 20px;
-        text-decoration: none;
-        &:hover{
-          background: #41B619;
-          color: #FFFFFF;
-          transition: all 200ms ease;
-        }
-     
-      }
-      &_title{
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 54px;
-        letter-spacing: 0.02em;
-        color: #464646;
-      }
-      &_grid{
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(165px, 180px));
-        grid-template-rows: repeat(3, 96px);
-        grid-auto-flow: column;
-        column-gap: 42px;
-        row-gap: 18px;
-        &-bl{
-          &-title{
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 28px;
-            letter-spacing: 0.02em;
-            color: #464646;
-          }
-          &-number{
-            font-weight: 600;
-            font-size: 22px;
-            line-height: 28px;
-            letter-spacing: 0.02em;
-            color: #464646;
-          }
-          &-descr{
-            font-weight: 600;
-            font-size: 12px;
-            line-height: 28px;
-            letter-spacing: 0.02em;
-            color: #464646;
-
-          }
-        }
-      }
-    }
-  }
   &__title {
     position: relative;
     font-weight: 700;
@@ -200,7 +8,7 @@
     text-transform: uppercase;
     letter-spacing: 0.02em;
     color: #464646;
-
+  
     &:before {
       content: 'выгода';
       position: absolute;
@@ -214,30 +22,256 @@
       opacity: 0.05;
     }
   }
+&__nav {
+  margin-top: 18px;
 
-  &__nav {
-    margin-top: 18px;
-    .nav {
-      display: flex;
-      column-gap: 42px;
-      justify-content: flex-start;
-      &-link {
-        padding: 0 0 16px 0;
-        font-weight: 400;
+  .nav {
+    display: flex;
+    column-gap: 42px;
+    justify-content: flex-start;
+
+    &-link {
+      padding: 0 0 16px 0;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: 0.02em;
+      color: #7D7D7D;
+      &:hover{
+        color:#41B619;
+      }
+      &.active {
+        border-bottom: 2px solid #41B619;
+        font-weight: 700;
         font-size: 20px;
         line-height: 28px;
         letter-spacing: 0.02em;
-        color: #7D7D7D;
-        &.active {
-          border-bottom: 2px solid #41B619;
-          font-weight: 700;
-          font-size: 20px;
-          line-height: 28px;
-          letter-spacing: 0.02em;
-          color: #41B619;
+        color: #41B619;
+      }
+    }
+  }
+}
+
+  .mininformation {
+    margin-top: 14px;
+    display: flex;
+    column-gap: 36px;
+
+    &__el {
+      column-gap: 10px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: #464646;
+      &_img {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 46px;
+        height: 46px;
+        border: 1px solid #F1F2F2;
+        border-radius: 8px;
+        &:hover {
+          background-color:#41B619;
+          svg path {
+            fill: #fff;
+          }
         }
+    }
+
+    span {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: 0.02em;
+      color: #464646;
+    }
+
+   
+      // &:hover {
+      //   content: '';
+      //   background-color: #41B619;
+      // }
+
+      // &:after{
+      //   content: '';
+      //   position: absolute;
+      //   top: 0;
+      //   width: 23px;
+      //   height: 23px;
+      //   background: url('../img/pointer.svg')no-repeat;
+      //   top: 33px;
+      //   right: -3px;
+      // }
+    }
+
+  }
+
+}
+
+
+.eco {
+  margin: 10px;
+  padding: 24px;
+  max-width: 628px;
+  background: #E2F5DB;
+  border-radius: 32px;
+  position: relative;
+
+  &__card {
+    &:after {
+      content: '';
+      display: block;
+      right: -185px;
+      position: absolute;
+      width: 415.14px;
+      height: 90%;
+      transform: rotate(6.4deg);
+      top: 252px;
+      background: url('../img/list_2.png') center;
+    }
+
+    &_btn {
+      padding: 18px 24px;
+      margin-top: 24px;
+      width: 350px;
+      height: 56px;
+      background: #41B619;
+      border-radius: 20px;
+      border: none;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: #FFFFFF;
+      text-decoration: none;
+
+      &:hover {
+        background: #2D920A;
+        transition: all 200ms ease;
       }
     }
 
+    &_title {
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 54px;
+      letter-spacing: 0.02em;
+      color: #464646;
+    }
+
+    &_grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(165px, 180px));
+      grid-template-rows: repeat(3, 96px);
+      grid-auto-flow: column;
+      column-gap: 40px;
+      row-gap: 18px;
+
+      &-bl {
+        &-title {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 28px;
+          letter-spacing: 0.02em;
+          color: #464646;
+        }
+
+        &-number {
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 28px;
+          letter-spacing: 0.02em;
+          color: #464646;
+        }
+
+        &-descr {
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 28px;
+          letter-spacing: 0.02em;
+          color: #464646;
+
+        }
+      }
+    }
+  }
+}
+
+.wrapper {
+  margin: 10px;
+  padding: 24px;
+  max-width: 628px;
+  background: #F1F2F2;
+  border-radius: 32px;
+
+  &__card {
+    &_btn {
+      padding: 18px 24px;
+      margin-top: 24px;
+      width: 350px;
+      height: 56px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: #41B619;
+      border: 1px solid #41B619;
+      border-radius: 20px;
+      text-decoration: none;
+
+      &:hover {
+        background: #41B619;
+        color: #FFFFFF;
+        transition: all 200ms ease;
+      }
+
+    }
+
+    &_title {
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 54px;
+      letter-spacing: 0.02em;
+      color: #464646;
+    }
+
+    &_grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(165px, 180px));
+      grid-template-rows: repeat(3, 96px);
+      grid-auto-flow: column;
+      column-gap: 42px;
+      row-gap: 18px;
+
+      &-bl {
+        &-title {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 28px;
+          letter-spacing: 0.02em;
+          color: #464646;
+        }
+
+        &-number {
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 28px;
+          letter-spacing: 0.02em;
+          color: #464646;
+        }
+
+        &-descr {
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 28px;
+          letter-spacing: 0.02em;
+          color: #464646;
+
+        }
+      }
+    }
   }
 }
