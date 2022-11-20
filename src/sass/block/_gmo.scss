@@ -5,13 +5,12 @@
     img{
       position: absolute;
       z-index: -1;
-      top: 213px;;
+      top: 245px;
     }
   }
   .flat{
     padding: 38px;
     width: 428px;
-    height: 592px;
     background: #FFFFFF;
     box-shadow: 0px 12px 25px rgba(30, 58, 20, 0.1);
     border-radius: 24px;
@@ -20,11 +19,12 @@
       content: '';
       position: absolute;
       z-index: -1;
+      width: 322px;
+      height: 588px;
       left: -28px;
       top: 70px;
-      width: 322px;
-      height: 556px;
-      background: url('../img/opasit.png');
+      border-radius: 24px;
+      background-color: #E2F5DB;
     }
     &::before {
       content: '';
@@ -33,8 +33,9 @@
       left: -58px;
       top: 100px;
       width: 322px;
-      height: 556px;
-      background: url('../../img/fon.svg');
+      height: 588px;
+      border-radius: 24px;
+      background-color: rgba(226, 245, 219, 0.3);
     }
     &__title{
       font-weight: 700;
@@ -81,6 +82,7 @@
       color: #464646;
     }
     &__term{
+      margin-top: 34px;
       font-weight: 400;
       font-size: 16px;
       line-height: 28px;
