@@ -812,7 +812,7 @@
 
 	<section class="cmc">
 		<div class="container">
-			<div class="impl" id="object">	
+			<div class="impl" id="object">
 				<div class="impl__fon">
 					<div class="impl__fon_item">
 						<div class="impl__fon_item-title">Где бы вы хотели жить?</div>
@@ -865,22 +865,43 @@
 					<div class="flat__title">Давайте подберём <br> вам квартиру мечты!</div>
 					<div class="flat__subtitle">Кол-во комнат</div>
 					<div class="flat__rooms">
-						<a href="#" class="flat__rooms_room">1</a>
-						<a href="#" class="flat__rooms_room">2</a>
-						<a href="#" class="flat__rooms_room">3</a>
-						<a href="#" class="flat__rooms_room">4</a>
+						<div class="flat__rooms_room">
+							<div class="form_radio_btn">
+								<input id="radio-1" type="radio" name="radio" value="1" checked>
+								<label for="radio-1">1</label>
+							</div>
+						</div>
+						<div class="flat__rooms_room">
+							<div class="form_radio_btn">
+								<input id="radio-2" type="radio" name="radio" value="2">
+								<label for="radio-2">2</label>
+							</div>
+						</div>
+						<div class="flat__rooms_room">
+							<div class="form_radio_btn">
+								<input id="radio-3" type="radio" name="radio" value="3">
+								<label for="radio-3">3</label>
+							</div>
+						</div>
+						<div class="flat__rooms_room">
+							<div class="form_radio_btn">
+								<input id="radio-4" type="radio" name="radio" value="3">
+								<label for="radio-4">4</label>
+							</div>
+						</div>
+
 					</div>
 					<div class="flat__price">Стоимость квартиры, млн. руб.</div>
 					<div class="flat__range">
 						<div class="price-input">
 							<div class="field">
 								<span>от <input type="number" class="input-min" value="2.2" disabled>млн. руб.</input>
-								
+
 							</div>
-						
+
 							<div class="field">
 								<span>до <input type="number" class="input-max" value="5.4" disabled>млн. руб.</span>
-								
+
 							</div>
 						</div>
 						<div class="slider">
@@ -894,17 +915,22 @@
 
 					<div class="flat__term">Срок сдачи</div>
 					<div class="flat__years">
-						<div class="flat__years_year">Заселён</div>
-						<div class="flat__years_year">2022</div>
-						<div class="flat__years_year">2023</div>
-						<div class="flat__years_year">2024+</div>
+						<div class="flat__years_year">
+			
+						</div>
+						<div class="flat__years_year">
+
+						</div>
 					</div>
+
 					<div class="flat__btn">Выбрать квартиру</div>
 				</div>
-				<div class="ecoimg col-12 offset-md-3 col-md-10">
-					<img src="./img/ecoimg.png" alt="ecoimg">
-				</div>
+			
 			</div>
+			<div class="ecoimg col-12 offset-md-3 col-md-10">
+				<img src="./img/ecoimg.png" alt="ecoimg">
+			</div>
+		</div>
 
 		</div>
 
