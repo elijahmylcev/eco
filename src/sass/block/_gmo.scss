@@ -46,6 +46,15 @@
       line-height: 28px;
       letter-spacing: 0.02em;
       color: #464646;
+      &::before{
+        content: '';
+        position: absolute;
+        width: 550px;
+        height: 560px;
+        top: -35px;
+        right: -571px;
+        background: url('../img/squirrel.svg') no-repeat;
+      }
     }
     &__subtitle{
       margin-top: 24px;
@@ -102,15 +111,7 @@
       color: #FFFFFF;
       cursor: pointer;
       position: relative;
-      &::before{
-        content: '';
-        position: absolute;
-        width: 550px;
-        height: 560px;
-        transform: translateY(-87%);
-        right: -571px;
-        background: url('../../img/squirrel.svg') no-repeat;
-      }
+     
      
       &:hover {
         background: #2D920A;
