@@ -1,0 +1,17 @@
+@media (max-width: 1024) {
+  html{
+    overflow-x: hidden;
+  }
+  .titul{
+    a{
+      font-size: 14px;
+    }
+  }
+  .content{
+    &__wrapper{
+      &_title{
+        font-size: 32px;
+      }
+    }
+  }
+}

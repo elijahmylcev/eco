@@ -10,7 +10,17 @@
   margin: 0;
 }
 
-body{
+html{
+
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body
+{
+  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -28,3 +38,6 @@ body{
 @import 'block/foother';
 @import 'block/modal';
 @import 'block/range';
+
+@import 'media/media';
+
