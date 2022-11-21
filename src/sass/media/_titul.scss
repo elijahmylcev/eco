@@ -1,15 +1,38 @@
-@media (max-width: 1024) {
-
-  .titul{
-    a{
-      font-size: 14px;
+@media (max-width: 1400px) {
+  .titul {
+    &__menu{
+      &_links{
+        &-order {
+          a{
+            font-size: 14px;
+          }
+        }
+     
+      }
     }
+ 
   }
   .content{
     &__wrapper{
       &_title{
+        margin-top: 40px;
         font-size: 32px;
+        &::after{
+          top: -4px;
+          right: -46px;
+        
+        }
       }
+      &_subtitle{
+        max-width: 511px;
+        font-size: 16px;
+      }
+      &_btn{
+        margin-top: 24px;
+      }
+    }
+    &__img{
+      width: 394px;
     }
   }
 }
