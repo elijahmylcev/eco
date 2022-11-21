@@ -36,6 +36,7 @@ gulp.task('watch', function() {
     gulp.watch("src/fonts/**/*").on('all', gulp.parallel('fonts'));
     gulp.watch("src/icons/**/*").on('all', gulp.parallel('icons'));
     gulp.watch("src/img/**/*").on('all', gulp.parallel('images'));
+    gulp.watch("src/gif/*").on('all', gulp.parallel('gif'));
 });
 
 gulp.task('html', function () {
@@ -69,4 +70,22 @@ gulp.task('images', function () {
         .pipe(browserSync.stream());
 });
 
-gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'icons', 'html', 'images'));
+gulp.task('gif', function () {
+    return gulp.src("src/gif/*.gif")
+        .pipe(gulp.dest("docs/gif"))
+        .pipe(browserSync.stream())
+});
+
+gulp.task('sourcesBootsCss', function () {
+    return gulp.src('./node_modules/bootstrap/dist/css/bootstrap.min.css')
+        .pipe(gulp.dest("docs/css"))
+        .pipe(browserSync.stream())
+})
+
+gulp.task('sourcesBootsJS', function () {
+    return gulp.src('./node_modules/bootstrap/dist/js/bootstrap.min.js')
+        .pipe(gulp.dest("docs/js"))
+        .pipe(browserSync.stream())
+})
+
+gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'icons', 'html', 'images', 'gif', 'sourcesBootsCss', 'sourcesBootsJS'));
