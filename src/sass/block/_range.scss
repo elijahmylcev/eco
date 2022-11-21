@@ -74,9 +74,10 @@
 
     .range-input {
       position: relative;
-
+ 
       input[type="range"] {
         &::-webkit-slider-thumb {
+          cursor: pointer;
           height: 17px;
           width: 17px;
           border-radius: 50%;

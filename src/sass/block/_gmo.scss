@@ -89,21 +89,25 @@
       color: #7D7D7D;
     }
     &__years{
-      margin-top: 12px;
       display: flex;
-      column-gap: 16px;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 28px;
-      letter-spacing: 0.02em;
-      color: #464646;
-      &_year{
-        padding: 10px;
-        height: 48px;
-        background: #F1F2F2;
-        border-radius: 8px;
-      }
+      
     }
+    // &__years{
+    //   margin-top: 12px;
+    //   display: flex;
+    //   column-gap: 16px;
+    //   font-weight: 400;
+    //   font-size: 18px;
+    //   line-height: 28px;
+    //   letter-spacing: 0.02em;
+    //   color: #464646;
+    //   &_year{
+    //     padding: 10px;
+    //     height: 48px;
+    //     background: #F1F2F2;
+    //     border-radius: 8px;
+    //   }
+    // }
     &__btn{
       margin-top: 32px;
       padding: 18px 24px;

@@ -106,16 +106,19 @@
   height: 48px;
   background: #F1F2F2;
   border-radius: 8px;
+  cursor: pointer;
   &:hover{
     background-color: #E2F5DB;
   }
 }
 
 /* Checked */
-.form_radio_btn input[type=radio]:checked + label {
+.form_radio_btn input[name=radio-room]:checked + label {
 	background-color: #41B619;
   color: #fff;
 }
+
+
  
 /* Hover */
 .form_radio_btn label:hover {
@@ -130,4 +133,38 @@
 
 
 
+// Настрйка радио чекбоксов с временем года
 
+
+
+.form_radio_btn-year input[name=radio]:checked + label {
+	background-color: #41B619;
+  color: #fff;
+}
+
+.form_radio_btn-year {
+	display: inline-block;
+	margin-right: 10px;
+}
+.form_radio_btn-year input[type=radio] {
+	display: none;
+}
+
+.form_radio_btn-year label {
+  margin-top: 12px;
+  display: flex;
+  column-gap: 16px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #464646;
+  cursor: pointer;
+  padding: 10px;
+  height: 48px;
+  background: #F1F2F2;
+  border-radius: 8px;
+  &:hover{
+    background-color: #E2F5DB;
+  }
+}
