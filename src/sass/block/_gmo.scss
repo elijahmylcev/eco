@@ -1,6 +1,7 @@
 .gmo{
   padding-top: 246px;
   position: relative;
+ 
   }
   .flat{
     padding: 38px;
@@ -9,6 +10,7 @@
     box-shadow: 0px 12px 25px rgba(30, 58, 20, 0.1);
     border-radius: 24px;
     position: relative;
+
     &__img{
       position: absolute;
       top: -61px;
@@ -99,6 +101,17 @@
       text-align: center;
       color: #FFFFFF;
       cursor: pointer;
+      position: relative;
+      &::before{
+        content: '';
+        position: absolute;
+        width: 550px;
+        height: 560px;
+        transform: translateY(-87%);
+        right: -571px;
+        background: url('../../img/squirrel.svg') no-repeat;
+      }
+     
       &:hover {
         background: #2D920A;
         color: #FFFFFF;
