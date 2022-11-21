@@ -90,14 +90,11 @@
   }
 
   &_btn {
+    padding: 18px 24px;
     margin-top: 42px;
     width: 350px;
     height: 56px;
     border-radius: 20px;
-    width: 350px;
-    height: 56px;
-    left: 78px;
-    top: 500px;
     background: #41B619;
     border: none;
     font-weight: 600;
@@ -105,6 +102,13 @@
     line-height: 20px;
     text-align: center;
     color: #FFFFFF;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+      background: #2D920A;
+      color: #FFFFFF;
+      transition: all 200ms ease;
+    }
   }
 
   &_terms {

@@ -33,6 +33,8 @@
         letter-spacing: 0.02em;
         text-transform: uppercase;
         color: rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        
       }
       &_item{
        
@@ -56,6 +58,13 @@
             line-height: 20px;
             text-align: center;
             color: #FFFFFF;
+            cursor: pointer;
+            text-decoration: none;
+            &:hover {
+              background: #2D920A;
+              color: #FFFFFF;
+              transition: all 200ms ease;
+            }
           }
           &-text{
             font-weight: 400;

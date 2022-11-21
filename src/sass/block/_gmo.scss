@@ -5,7 +5,7 @@
     img{
       position: absolute;
       z-index: -1;
-      top: 245px;
+      top: 184px;
     }
   }
   .flat{
@@ -20,7 +20,7 @@
       position: absolute;
       z-index: -1;
       width: 322px;
-      height: 588px;
+      height: 526px;
       left: -28px;
       top: 70px;
       border-radius: 24px;
@@ -33,7 +33,7 @@
       left: -58px;
       top: 100px;
       width: 322px;
-      height: 588px;
+      height: 523px;
       border-radius: 24px;
       background-color: rgba(226, 245, 219, 0.3);
     }
@@ -61,15 +61,7 @@
     &__rooms{
       display: flex;
       gap: 10px;
-      // &_room{
-      //   margin-top: 12px;
-      //   text-align: center;
-      //   padding: 10px;
-      //   width: 48px;
-      //   height: 48px;
-      //   background: #F1F2F2;
-      //   border-radius: 8px;
-      // }
+
     }
     &__minmax{
       margin-top: 11px;
@@ -90,24 +82,9 @@
     }
     &__years{
       display: flex;
-      
+
     }
-    // &__years{
-    //   margin-top: 12px;
-    //   display: flex;
-    //   column-gap: 16px;
-    //   font-weight: 400;
-    //   font-size: 18px;
-    //   line-height: 28px;
-    //   letter-spacing: 0.02em;
-    //   color: #464646;
-    //   &_year{
-    //     padding: 10px;
-    //     height: 48px;
-    //     background: #F1F2F2;
-    //     border-radius: 8px;
-    //   }
-    // }
+  
     &__btn{
       margin-top: 32px;
       padding: 18px 24px;
@@ -120,6 +97,12 @@
       line-height: 20px;
       text-align: center;
       color: #FFFFFF;
+      cursor: pointer;
+      &:hover {
+        background: #2D920A;
+        color: #FFFFFF;
+        transition: all 200ms ease;
+      }
     }
    
   }
