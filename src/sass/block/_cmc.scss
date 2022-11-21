@@ -19,6 +19,12 @@
       height: 662px;
       background-color: #ECFFE5;
       border-radius: 24px;
+      position: relative;
+      &_img{
+        position: absolute;
+        top: -214px;
+        left: -119px;
+      }
       &_gif {
         width: 100%;
         img{

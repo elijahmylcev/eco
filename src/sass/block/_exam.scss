@@ -1,15 +1,13 @@
 .exam{
+  position: relative;
   padding-top: 169px;
+ 
   &__text{
     position: relative;
-    &::after {
-      content: '';
+    &_img{
       position: absolute;
-      width: 767px;
-      height: 610px;
-      top: -36px;
-      left: 100%;
-      background: url('../img/exem.png');
+      width: 699px;
+      right: -708px;
     }
     &_title{
       position:relative;

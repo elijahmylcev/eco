@@ -88,23 +88,6 @@
       letter-spacing: 0.02em;
       color: #464646;
     }
-
-   
-      // &:hover {
-      //   content: '';
-      //   background-color: #41B619;
-      // }
-
-      // &:after{
-      //   content: '';
-      //   position: absolute;
-      //   top: 0;
-      //   width: 23px;
-      //   height: 23px;
-      //   background: url('../img/pointer.svg')no-repeat;
-      //   top: 33px;
-      //   right: -3px;
-      // }
     }
 
   }
@@ -121,18 +104,12 @@
   position: relative;
 
   &__card {
-    &:after {
-      content: '';
-      display: block;
-      right: -185px;
+    position: relative;
+    &_img{
       position: absolute;
-      width: 415.14px;
-      height: 90%;
-      transform: rotate(6.4deg);
-      top: 252px;
-      background: url('../img/list_2.png') center;
+      top: 228px;
+      right: -131px;
     }
-
     &_btn {
       padding: 18px 24px;
       margin-top: 24px;

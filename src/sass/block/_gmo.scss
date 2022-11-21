@@ -1,12 +1,6 @@
 .gmo{
   padding-top: 246px;
   position: relative;
-  .ecoimg{
-    img{
-      position: absolute;
-      z-index: -1;
-      top: 184px;
-    }
   }
   .flat{
     padding: 38px;
@@ -15,6 +9,13 @@
     box-shadow: 0px 12px 25px rgba(30, 58, 20, 0.1);
     border-radius: 24px;
     position: relative;
+    &__img{
+      position: absolute;
+      top: -61px;
+      left: 334px;
+      z-index: -1;
+    }
+
     &::after {
       content: '';
       position: absolute;
@@ -107,5 +108,5 @@
    
   }
   
-}
+
 

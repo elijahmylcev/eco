@@ -58,10 +58,9 @@
   
   &__img {
     position: absolute;
-    right: 0;
-    top: 0;
     right: -259px;
-    top: -47px;
+    width: 573px;
+    right: -47px;
   }
 
   &__wrapper {
@@ -72,7 +71,16 @@
       font-size: 40px;
       line-height: 50px;
       color: #0B3246;
-
+      position: relative;
+      &:after{
+        content: url('../img/95.png');
+        display: block;
+        position: absolute;
+        width: 150px;
+        height: 50px;
+        top: -21px;
+        right: -192px;
+      }
     }
 
     &_subtitle {
