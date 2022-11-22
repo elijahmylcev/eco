@@ -15,12 +15,13 @@
   
   &__img {
     position: absolute;
-    right: -259px;
+    right: -43px;
     width: 573px;
-    right: -47px;
+    top: -47px;
   }
 
   &__wrapper {
+    display: flex;
     &_title {
       margin-top: 109px;
       max-width: 546px;
