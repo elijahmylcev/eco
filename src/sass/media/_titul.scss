@@ -73,6 +73,10 @@
   }
 
   .content {
+    &__img{
+      right: -60px;
+      top: 16px;
+    }
     &__wrapper {
       &_title {
         width: 324px;
@@ -95,6 +99,9 @@
     }
   }
 }
+
+
+
 
 @media (max-width: 768px) {
   .wid{
