@@ -169,4 +169,9 @@
   }
 }
 
-
+@media (max-width: 425px) {
+  .pad {
+    padding: 0;
+    margin-top: 0;
+  }
+}

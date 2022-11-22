@@ -41,9 +41,10 @@
     }
 
     &__img {
-      right: 62px;
+      right: -9px;
+      top: 38px;
+      // right: 62px;
       width: 394px;
-      
     }
   }
 }
@@ -176,11 +177,18 @@
 
   .content {
     &__img {
-      right: 62px;
-      top: 247px;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 199px;
     }
 
     &__wrapper {
+      &_title{
+        &::after {
+          display: block;
+
+        }
+      }
       &_terms {
         margin-top: 325px;
         flex-wrap: wrap;
@@ -199,6 +207,7 @@
       }
 
       &_subtitle {
+        width: 546px;
         margin-top: 15px;
         line-height: 24px;
       }
@@ -219,24 +228,29 @@
 @media (max-width: 576px) {
 
   .content {
-    &__img {
-      right: 59px;
-    }
-
     &__wrapper {
       &_title {
         width: 301px;
+        &::after {
+          display: none;
+        }
       }
 
       &_subtitle {
         width: 386px;
       }
     }
+    &__img{
+      top: 258px;
+    }
 
   }
 }
 
 @media (max-width: 425px) {
+  .inclos{
+    z-index: 20;
+  }
   .header {
     &__menu {
       &_number {
@@ -299,9 +313,28 @@
     }
 
     &__img {
-      right: -9px;
-      width: 292px;
       top: 296px;
+      width: 292px;
+    }
+  }
+  .wid{
+    width: 343px;
+    padding: 24px 18px;
+  }
+  .modaleco{
+    .btn{
+      width: 266px;
+    }
+    &__title{
+      font-size: 22px;
+    }
+    &__subtitle{
+      width: 270px;
+      font-size: 14px;
+      line-height: 26px;
+    }
+    input{
+      width: 267px;
     }
   }
 }
