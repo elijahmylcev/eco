@@ -28,7 +28,6 @@
       }
 
       &_subtitle {
-        max-width: 511px;
         font-size: 16px;
       }
 
@@ -42,7 +41,19 @@
     }
 
     &__img {
+      right: 62px;
       width: 394px;
+      
+    }
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .content{
+    &__img{
+      right: -9px;
+      top: 38px;
     }
   }
 }
@@ -50,6 +61,7 @@
 @media (max-width: 1024px) {
   .header {
     padding-bottom: 0px;
+
     &__menu {
       &_links {
         &-order {
@@ -73,13 +85,15 @@
   }
 
   .content {
-    &__img{
-      right: -60px;
+    &__img {
+      width: 350px;
+      right: 11px;
       top: 16px;
     }
+
     &__wrapper {
       &_title {
-        width: 324px;
+        width: 467px;
         line-height: 35px;
         font-size: 26px;
 
@@ -88,15 +102,15 @@
 
         }
       }
-      &_subtitle{
-        max-width: 377px;
+
+      &_subtitle {
+        width: 430px;
         font-size: 12px;
         line-height: 20px;
       }
     }
-    &__img {
-      width: 350px;
-    }
+
+
   }
 }
 
@@ -104,19 +118,23 @@
 
 
 @media (max-width: 768px) {
-  .wid{
+  .wid {
     width: 425px;
-    .img{
+
+    .img {
       display: none;
     }
   }
-  .header{
-    &__menu{
+
+  .header {
+    &__menu {
       padding-bottom: 5px;
+
       &-hamburger {
         display: block;
         width: 22px;
-        span{
+
+        span {
           display: block;
           width: 22px;
           height: 2px;
@@ -125,59 +143,72 @@
           border-radius: 2px;
           transition: 0.5s all;
         }
-        &-active{
-            span{
-              margin-bottom: -2px;
-              &:nth-child(1){
-                transform: rotate(-45deg);
-              }
-              &:nth-child(2){
-                display: none;
-              }
-              &:nth-child(3){
-                transform: rotate(45deg);
-              }
+
+        &-active {
+          span {
+            margin-bottom: -2px;
+
+            &:nth-child(1) {
+              transform: rotate(-45deg);
             }
+
+            &:nth-child(2) {
+              display: none;
+            }
+
+            &:nth-child(3) {
+              transform: rotate(45deg);
+            }
+          }
         }
       }
-      &_links{
+
+      &_links {
         position: relative;
+
         &-order {
           display: none;
         }
       }
-     
+
     }
   }
-  .content{
-    &__img{
+
+  .content {
+    &__img {
       right: 62px;
       top: 247px;
     }
-    &__wrapper{
-      &_terms{
+
+    &__wrapper {
+      &_terms {
         margin-top: 325px;
         flex-wrap: wrap;
         justify-content: space-between;
-        gap: 10px;
-        &-item{
-         &:nth-child(2){
-          order: 3;
-         }
+        row-gap: 10px;
+
+        &-item {
+          &:nth-child(2) {
+            order: 3;
+          }
         }
       }
-      &_title{
+
+      &_title {
         margin-top: 0px;
       }
-      &_subtitle{
+
+      &_subtitle {
         margin-top: 15px;
         line-height: 24px;
       }
-      &_btn{
+
+      &_btn {
         display: block;
         margin: 0 auto;
         margin-top: 15px;
-        &:nth-child(3){
+
+        &:nth-child(3) {
           order: 3;
         }
       }
@@ -186,51 +217,91 @@
 }
 
 @media (max-width: 576px) {
-  .container{
-    max-width: 395px;
-    .content{
-      &__img{
-        right: 0;
+
+  .content {
+    &__img {
+      right: 59px;
+    }
+
+    &__wrapper {
+      &_title {
+        width: 301px;
       }
+
+      &_subtitle {
+        width: 386px;
+      }
+    }
+
   }
-}
 }
 
 @media (max-width: 425px) {
-  .header{
-   &__menu{
-    &_number{
-      font-size: 14px;
+  .header {
+    &__menu {
+      &_number {
+        font-size: 14px;
+      }
     }
-   }
   }
-  .content{
-    &__wrapper{
-      &_title{
+
+  .content {
+    &__wrapper {
+      &_title {
+        width: 301px;
         margin: 0;
       }
+
+      &_subtitle {
+        width: 386px;
+      }
     }
   }
-  .content{
-    &__wrapper{
-      &_title{
+
+  .content {
+    &__wrapper {
+      &_title {
         font-size: 24px;
       }
-      &_subtitle{
+
+      &_subtitle {
+        width: 299px;
         font-size: 14px;
-     
+
       }
-      &_terms{
-        &-item{
-          &-descr{
+
+      &_btn {
+        width: 290px;
+      }
+
+      &_terms {
+        margin-top: 293px;
+        &-item {
+          row-gap: 6px;
+          column-gap: 5px;
+      
+          &-descr {
             font-size: 12px;
-            span{
+
+            span {
               font-size: 14px;
             }
           }
+          &-img{
+            img{
+             width: 100%;
+            }
+           }
         }
        
+
       }
-    } 
+    }
+
+    &__img {
+      right: -9px;
+      width: 292px;
+      top: 296px;
+    }
   }
 }
