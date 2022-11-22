@@ -145,7 +145,7 @@
   .content{
     &__img{
       right: 62px;
-      top: 201px;
+      top: 247px;
     }
     &__wrapper{
       &_terms{
@@ -164,7 +164,7 @@
       }
       &_subtitle{
         margin-top: 15px;
-        
+        line-height: 24px;
       }
       &_btn{
         display: block;
@@ -203,5 +203,27 @@
         margin: 0;
       }
     }
+  }
+  .content{
+    &__wrapper{
+      &_title{
+        font-size: 24px;
+      }
+      &_subtitle{
+        font-size: 14px;
+     
+      }
+      &_terms{
+        &-item{
+          &-descr{
+            font-size: 12px;
+            span{
+              font-size: 14px;
+            }
+          }
+        }
+       
+      }
+    } 
   }
 }
