@@ -65,7 +65,6 @@
       line-height: 28px;
       color: #464646;
       &_img {
-        position: relative;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -95,22 +94,30 @@
 
 }
 
+.comprasion_wr {
+  display: grid;
+  column-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 
 .eco {
-  margin: 10px;
+  z-index: 1;
   padding: 24px;
   max-width: 628px;
   background: #E2F5DB;
   border-radius: 32px;
   position: relative;
 
+  &_img{
+    position: absolute;
+    width: 25%;
+    top: 97%;
+    right: 2%;
+  }
+
   &__card {
     position: relative;
-    &_img{
-      position: absolute;
-      top: 228px;
-      right: -131px;
-    }
     &_btn {
       padding: 18px 24px;
       margin-top: 24px;
@@ -179,7 +186,6 @@
 }
 
 .wrapper {
-  margin: 10px;
   padding: 24px;
   max-width: 628px;
   background: #F1F2F2;

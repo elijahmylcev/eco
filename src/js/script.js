@@ -45,9 +45,24 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const menu = document.querySelector('.mobile__menu');
     const hamburger = document.querySelector('.header__menu-hamburger');
+    const overlay = document.querySelector('.menu__overlay');
+    
+    overlay.addEventListener('click', (e) => {
+        if (e.target.classList.contains('menu__overlay_active')) {
+            document.querySelector('body').style.overflow = 'auto'
+            menu.style.height = `0px`;
+            menu.style.padding = '0';
+            hamburger.classList.toggle('header__menu-hamburger-active');
+            overlay.classList.remove('menu__overlay_active')
+        }
+    })
+
+
 
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('header__menu-hamburger-active');
+        overlay.classList.toggle('menu__overlay_active')
+
         if (hamburger.classList.contains('header__menu-hamburger-active')) {
             document.querySelector('body').style.overflow = 'hidden'
             menu.style.paddingTop = '24px';

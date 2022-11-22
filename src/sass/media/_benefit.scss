@@ -1,23 +1,74 @@
-@media (max-width: 1400px) {
-  
+@media (max-width: 1100px) {
+  .wrapper__card_grid {
+    grid-auto-flow: inherit;
+  }
+  .eco__card {
+    &_grid {
+      grid-auto-flow: inherit;
+    }
+  }
 }
 
-@media (max-width: 1200px) {
-
-}
-
-@media (max-width: 1024px) {
-
+@media (max-width: 1025px) {
+  .wrapper__card_grid {
+    grid-auto-flow: inherit;
+  }
+  .eco__card {
+    &_grid {
+      grid-auto-flow: inherit;
+    }
+  }
 }
 
 @media (max-width: 768px) {
+  .comprasion_wr {
+    column-gap: 0;
+  }
+  .benefit {
+    &__title {
+      &::before {
+        top: -35px;
+        font-size: 76px;
+      }
+    }
+  }
+  .wrapper {
+    padding: 15px;
+    border-radius: 32px 0 0 32px;
+    &__card {
+      &_title {
+        font-size: 18px;
+        line-height: 28px;
+      }
+      &_grid {
+        grid-auto-flow: inherit;
+      }
 
-}
+      &_btn {
+        width: inherit;
+        font-size: 14px;
+      }
+    }
+    
+    
+  }
 
-@media (max-width: 576px) {
+  .eco {
+    padding: 15px;
+    border-radius: 0 32px 32px 0;
+    &__card {
+      &_title {
+        font-size: 18px;
+        line-height: 28px;
 
-}
-
-@media (max-width: 425px) {
-
+      }
+      &_grid {
+        grid-auto-flow: inherit;
+      } 
+      &_btn {
+        width: inherit;
+        font-size: 14px;
+      }
+    }
+  }
 }
