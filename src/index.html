@@ -235,22 +235,43 @@
 		</div>
 	</div>
 
-
-	<section class="titul">
+	<header class="header">
 		<div class="container">
-			<nav class="titul__menu">
-				<div class="titul__menu_logo"><img src="./img/Logo.svg" alt="logo"></div>
-				<div class="titul__menu_links">
-					<ul class="titul__menu_links-order">
+			<nav class="header__menu">
+				<div class="header__menu_logo"><img src="./img/Logo.svg" alt="logo"></div>
+				<div class="header__menu_links">
+					<ul class="header__menu_links-order">
 						<li><a href="#option">Примеры</a></li>
 						<li><a href="#whyeco">Почему Экоипотека</a></li>
 						<li><a href="#object">Объекты</a> </li>
 						<li><a href="#flat">Подобрать квартиру</a></li>
 					</ul>
-				</div>
-				<a class="titul__menu_number" href="tel:+78005505003">8(800) 550-50-03</a>
-			</nav>
 
+				</div>
+				<div class="d-flex align-items-center gap-3">
+					<a class="header__menu_number" href="tel:+78005505003">8(800) 550-50-03</a>
+					<div class="header__menu-hamburger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="mobile__menu">
+			<ul class="mobile__menu_links">
+				<li><a href="#option">Примеры</a></li>
+				<li><a href="#whyeco">Почему Экоипотека</a></li>
+				<li><a href="#object">Объекты</a> </li>
+				<li><a href="#flat">Подобрать квартиру</a></li>
+			</ul>
+		</div>
+	</header>
+
+	
+
+	<section class="titul">
+		<div class="container">
 			<div class="content">
 				<img class="content__img" src="./img/titul.png" alt="titul">
 				<div class="content__wrapper">
@@ -286,7 +307,7 @@
 
 		</div>
 	</section>
-<!-- 
+	<!-- 
 	<section class="benefit">
 		<div class="container">
 			<div class="benefit__title">Очевидная выгода</div>
