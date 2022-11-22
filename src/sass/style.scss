@@ -16,7 +16,7 @@ body{
 }
 
 .container {
-  max-width: 1350px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -30,6 +30,7 @@ body{
 @import 'block/foother';
 @import 'block/modal';
 @import 'block/range';
+
 
 @import 'media/media';
 
