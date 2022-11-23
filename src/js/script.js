@@ -42,18 +42,31 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    function closeMenu() {
+        document.querySelector('body').style.overflow = 'auto'
+        menu.style.height = `0px`;
+        menu.style.padding = '0';
+        hamburger.classList.toggle('header__menu-hamburger-active');
+        overlay.classList.remove('menu__overlay_active')
+    }
+
 
     const menu = document.querySelector('.mobile__menu');
     const hamburger = document.querySelector('.header__menu-hamburger');
     const overlay = document.querySelector('.menu__overlay');
+    const menuLinks = document.querySelectorAll('.mobile__menu_links > li > a')
+
+    menuLinks.forEach(item => {
+        item.addEventListener('click', () => {
+            if (hamburger.classList.contains('header__menu-hamburger-active')) {
+                closeMenu()
+            }
+        })
+    })
     
     overlay.addEventListener('click', (e) => {
         if (e.target.classList.contains('menu__overlay_active')) {
-            document.querySelector('body').style.overflow = 'auto'
-            menu.style.height = `0px`;
-            menu.style.padding = '0';
-            hamburger.classList.toggle('header__menu-hamburger-active');
-            overlay.classList.remove('menu__overlay_active')
+            closeMenu()
         }
     })
 
@@ -69,9 +82,7 @@ window.addEventListener('DOMContentLoaded', () => {
             menu.style.height = `${menu.scrollHeight + 48}px`;
 
         } else {
-            document.querySelector('body').style.overflow = 'auto'
-            menu.style.height = `0px`;
-            menu.style.padding = '0';
+            closeMenu()
         }
         // menu.classList.toggle('mobile__menu-active');
     });

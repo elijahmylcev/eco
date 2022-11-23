@@ -65,6 +65,9 @@
     }
     .impl{
       padding: 0;
+      &__fon{
+        padding: 37px 25px;
+      }
     }
   }
 }
