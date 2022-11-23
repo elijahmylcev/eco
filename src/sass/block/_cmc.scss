@@ -7,7 +7,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: fit-content;
+    margin: 0 auto;
     background-color: rgba(226, 245, 219, 0.3);
     border-radius: 24px;
     &__fon {
@@ -42,7 +43,7 @@
         &-descr{
           margin-top: 26px;
           padding: 28px 24px;
-          width: 100%;
+          max-width:  547px;
           // height: 100%;
           border-radius: 24px;
           background: #FFFFFF;

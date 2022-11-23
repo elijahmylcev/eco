@@ -28,14 +28,23 @@
   .cmc{
     .impl{
       &__fon{
-        
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+        &_item{
+          &-title{
+            display: none;
+          }
+        }
+        &_gif{
+          grid-row: 1 / 2;
+        }
       }
     }
   }
 }
 
 @media (max-width: 768px) {
-  
+
 }
 
 @media (max-width: 576px) {
