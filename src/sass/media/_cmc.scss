@@ -30,11 +30,26 @@
       &__fon{
         grid-template-columns: 1fr;
         row-gap: 10px;
+        &_img{
+          display: none;
+        }
         &_item{
           &-title{
             display: none;
+            &.grid{
+              display: block;
+            }
+          }
+          &-descr{
+            &-btn{
+              display: none;
+              &.grid{
+                display: block;
+              }
+            }
           }
         }
+      
         &_gif{
           grid-row: 1 / 2;
         }
@@ -43,14 +58,40 @@
   }
 }
 
-@media (max-width: 768px) {
-
-}
-
 @media (max-width: 576px) {
-
+  .cmc{
+    .impl__fon_item-title{
+      font-size: 20px;
+    }
+    .impl{
+      padding: 0;
+    }
+  }
 }
 
-@media (max-width: 425px) {
-  
+@media (max-width: 400px) {
+  .cmc{
+    .impl{
+      &__fon{
+        padding: 12px 10px;
+        &_item{
+          &-descr{
+            margin-top: 8px;
+            padding: 13px 14px;
+            &-btn{
+              padding: 18px 12px;
+              font-size: 12px;
+            }
+            &-text{
+              font-size: 11px;
+            }
+          }
+          &-title{
+            font-size: 16px;
+          }
+        }
+      }
+    
+    }
+  }
 }

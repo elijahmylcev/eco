@@ -67,6 +67,9 @@
               color: #FFFFFF;
               transition: all 200ms ease;
             }
+            &.grid{
+              display: none;
+            }
           }
           &-text{
             font-weight: 400;
@@ -90,6 +93,9 @@
           letter-spacing: 0.02em;
           text-transform: uppercase;
           color: #464646;
+          &.grid{
+            display: none;
+          }
         }
       }
     }
