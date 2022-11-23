@@ -1,17 +1,41 @@
-@media (max-width: 1400px) {
 
-}
 
 @media (max-width: 1200px) {
-
+  .cmc{
+    .impl{
+      &__fon{
+        column-gap: 20px;
+        &_item{
+          &-title{
+            font-size: 26px;
+          }
+          &-descr{
+            &-text{
+              font-size: 14px;
+            }
+            &-btn{
+              font-size: 12px;
+            }
+          }
+         
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 1024px) {
-
+  .cmc{
+    .impl{
+      &__fon{
+        
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
-
+  
 }
 
 @media (max-width: 576px) {
