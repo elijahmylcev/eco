@@ -1,59 +1,66 @@
 .exam{
   position: relative;
   padding-top: 169px;
- 
-  &__text{
-    position: relative;
-    &_img{
-      position: absolute;
-      width: 699px;
-      right: -708px;
-    }
-    &_title{
-      position:relative;
-      font-weight: 700;
-      font-size: 32px;
-      line-height: 54px;
-      text-transform: uppercase;
-      color: #464646;
-      &:before {
-        content: 'узнать';
-        position: absolute;
-        top: -47px;
-        font-weight: 900;
-        font-size: 144px;
-        line-height: 54px;
-        letter-spacing: 0.02em;
-        text-transform: uppercase;
-        color: #7EDC5D;
-        opacity: 0.05;
+  &__wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    &_text{
+      position: relative;
+      &-img{
+        img{
+          width: 100%;
+        }
+
       }
-    }
-    &_subtitle{
-      margin-top: 18px;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 28px;
-      color: #464646;
-    }
-    &_btn{
-      padding: 18px 24px;
-      margin-top: 60px;
-      width: 350px;
-      height: 56px;
-      background: #41B619;
-      border-radius: 20px;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 20px;
-      text-align: center;
-      color: #FFFFFF;
-      cursor: pointer;
-      text-decoration: none;
-      &:hover {
-        background: #2D920A;
+      &-title{
+        position:relative;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 54px;
+        text-transform: uppercase;
+        color: #464646;
+        &:before {
+          content: 'узнать';
+          position: absolute;
+          top: -47px;
+          font-weight: 900;
+          font-size: 144px;
+          line-height: 54px;
+          letter-spacing: 0.02em;
+          text-transform: uppercase;
+          color: #7EDC5D;
+          opacity: 0.05;
+        }
+        &.grid{
+          display: none;
+        }
+      }
+      &-subtitle{
+        margin-top: 18px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #464646;
+      }
+      &-btn{
+        padding: 18px 24px;
+        margin-top: 60px;
+        width: 350px;
+        height: 56px;
+        background: #41B619;
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
         color: #FFFFFF;
-        transition: all 200ms ease;
+        cursor: pointer;
+        text-decoration: none;
+        &:hover {
+          background: #2D920A;
+          color: #FFFFFF;
+          transition: all 200ms ease;
+        }
       }
     }
   }
