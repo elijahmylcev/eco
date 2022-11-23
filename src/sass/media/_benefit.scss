@@ -145,10 +145,10 @@
 
   .wrapper {
     padding: 6px;
-    max-width: 170px;
+    max-width: 100%;
 
     &__card {
-
+   
       &_grid {
         row-gap: 12px;
 
@@ -179,11 +179,11 @@
 
   .eco {
     padding: 6px;
-    max-width: 170px;
+    max-width: 100%;
 
     &__card {
       &_title {
-        margin-bottom: 27px;
+        margin-bottom: 0;
       }
 
       &_grid {
@@ -210,4 +210,14 @@
     }
   }
 
+}
+
+@media (max-width: 390px) {
+  .eco {
+    &__card {
+      &_title {
+        margin-bottom: 27px;
+      }
+    }
+  }
 }
