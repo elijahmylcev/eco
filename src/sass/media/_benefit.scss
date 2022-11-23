@@ -2,6 +2,7 @@
   .wrapper__card_grid {
     grid-auto-flow: inherit;
   }
+
   .eco__card {
     &_grid {
       grid-auto-flow: inherit;
@@ -13,6 +14,7 @@
   .wrapper__card_grid {
     grid-auto-flow: inherit;
   }
+
   .eco__card {
     &_grid {
       grid-auto-flow: inherit;
@@ -22,8 +24,9 @@
 
 @media (max-width: 768px) {
   .comprasion_wr {
-    column-gap: 0;
+    column-gap: 3px;
   }
+
   .benefit {
     &__title {
       &::before {
@@ -32,14 +35,17 @@
       }
     }
   }
+
   .wrapper {
     padding: 15px;
     border-radius: 32px 0 0 32px;
+
     &__card {
       &_title {
         font-size: 18px;
         line-height: 28px;
       }
+
       &_grid {
         grid-auto-flow: inherit;
       }
@@ -49,26 +55,145 @@
         font-size: 14px;
       }
     }
-    
-    
+
+
   }
 
   .eco {
     padding: 15px;
     border-radius: 0 32px 32px 0;
+
     &__card {
       &_title {
         font-size: 18px;
         line-height: 28px;
 
       }
+
       &_grid {
         grid-auto-flow: inherit;
-      } 
+      }
+
       &_btn {
         width: inherit;
         font-size: 14px;
       }
     }
   }
+}
+
+@media (max-width: 576px) {
+  .wrapper {
+    &__card {
+      &_title {
+        font-size: 17px;
+      }
+    }
+  }
+
+  .benefit {
+    .mininformation {
+      &__el {
+        font-size: 14px;
+
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .benefit {
+    &__title {
+      font-size: 20px;
+
+      &::before {
+        font-size: 40px;
+      }
+    }
+
+    &__nav {
+      .nav {
+        column-gap: 25px;
+      }
+
+      .nav-link {
+        font-size: 16px;
+      }
+    }
+
+    .mininformation {
+      flex-wrap: wrap;
+    }
+  }
+
+  .wrapper {
+    padding: 8px;
+    max-width: 170px;
+
+    &__card {
+
+      &_grid {
+        row-gap: 12px;
+
+        &-bl {
+          &-title {
+            font-size: 12px;
+          }
+
+          &-number {
+            font-size: 20px;
+          }
+
+          &-descr {
+            font-size: 10px;
+          }
+        }
+      }
+
+      &_btn {
+        font-size: 10px;
+      }
+    }
+
+    .comprasion_wr {
+      justify-items: center;
+    }
+  }
+
+  .eco {
+    padding: 8px;
+    max-width: 170px;
+
+    &__card {
+      &_title {
+        margin-bottom: 27px;
+      }
+
+      &_grid {
+        row-gap: 12px;
+
+        &-bl {
+          &-title {
+            font-size: 12px;
+          }
+
+          &-number {
+            font-size: 20px;
+          }
+
+          &-descr {
+            font-size: 10px;
+          }
+        }
+      }
+
+      &_btn {
+        font-size: 10px;
+      }
+    }
+  }
+
 }
