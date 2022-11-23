@@ -1,5 +1,14 @@
 
-
+@media (max-width: 1400px) {
+  .modal-body{
+    img{
+      width: 92%;
+    }
+  }
+  .inclos{
+    z-index: 20;
+  }
+}
 
 @media (max-width: 768px) {
   .wid {
@@ -65,7 +74,5 @@
     }
   }
   
-  .inclos{
-    z-index: 20;
-  }
+
 }

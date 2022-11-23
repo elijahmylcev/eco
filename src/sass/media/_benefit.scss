@@ -116,11 +116,25 @@
 
     &__nav {
       .nav {
-        column-gap: 25px;
+        column-gap: 14px;
+        row-gap: 12px;
       }
 
       .nav-link {
+        padding: 4px 12px;
+        margin: 0 auto;
+        background: #F1F2F2;
+        border-radius: 16px;
         font-size: 16px;
+        &.active {
+          border-bottom: none;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 28px;
+          letter-spacing: 0.02em;
+          color: #41B619;
+          background-color: #E2F5DB;
+        }
       }
     }
 
@@ -148,7 +162,7 @@
           }
 
           &-descr {
-            font-size: 10px;
+            font-size: 8px;
           }
         }
       }
@@ -185,7 +199,7 @@
           }
 
           &-descr {
-            font-size: 10px;
+            font-size: 8px;
           }
         }
       }
