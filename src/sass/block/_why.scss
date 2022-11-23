@@ -1,6 +1,40 @@
 .why{
   position: relative;
-
+  padding-top: 180px;
+  .carousel{
+    display: none;
+    &-inner{
+     margin-top: 50px;
+    }
+    &-indicators{
+      bottom: -40px;
+      button{
+        box-sizing: border-box;
+        height: 10px;
+        width: 10px;
+        border-top: none;
+        background: #c2c6c6;
+        border-radius: 50%;
+        &.active{
+          background: #41B619;
+        }
+      }
+    }
+    &-item{
+      margin-top: 60px;
+      position: relative;
+      img{
+        position: absolute;
+        top: -56px;
+        right: 0;
+      }
+      .why__wrapper_card{
+        &::after{
+          display: none;
+        }
+      }
+    }
+  }
   &__title{
     position: relative;
     font-weight: 700;
@@ -25,24 +59,31 @@
   &__wrapper{
     position: relative;
     margin-top: 61px;
-    max-width: 854px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, minmax(320px, 1fr));
     grid-template-rows: repeat(2, minmax(232px, auto));
     column-gap: 28px;
     row-gap: 66px;
-    &_img{
-      position: absolute;
-      transform: translateY(-53%);
-      right: -473px;
-    }
+    // &_img{
+    //   position: absolute;
+    //   transform: translateY(-53%);
+    //   right: -473px;
+    // }
    
     &_card {
+      margin-top: 50px;
+      width: 90%;
+      margin: 0 auto;
       padding: 28px 24px 24px;
-      background: #83D683;
       border-radius: 24px;
       position: relative;
+      &.wooman{
+        transform: translateY(-106px);
+        grid-column: 3 / 4;
+        grid-row: 1 / 4;
+      }
       &.green {
+        background: #83D683;
         &::after {
           content: '';
           position: absolute;
@@ -74,7 +115,7 @@
           width: 130px;
           height: 130px;
           background:url('../icons/Key.svg');
-          right: -13px;
+          right: -0;
         }
       }
       &.violet{
@@ -86,7 +127,7 @@
           width: 130px;
           height: 130px;
           background:url('../icons/safe.svg');
-          right: -13px;
+          right: -0;
         }
       }
       &-title{

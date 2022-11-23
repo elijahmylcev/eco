@@ -1,6 +1,6 @@
 .benefit {
   padding-top: 125px;
-  padding-bottom: 200px;
+
   &__title {
     position: relative;
     font-weight: 700;
@@ -153,7 +153,7 @@
       grid-template-columns: repeat(auto-fill, minmax(100px, 180px));
       grid-template-rows: repeat(3, 96px);
       grid-auto-flow: column;
-      column-gap: 40px;
+      column-gap: 42px;
       row-gap: 18px;
 
       &-bl {

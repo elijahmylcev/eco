@@ -22,6 +22,12 @@
   }
 }
 
+@media (max-width: 1025px) {
+  .eco__card_btn{
+    width: 300px;
+  }
+}
+
 @media (max-width: 768px) {
   .comprasion_wr {
     column-gap: 3px;
