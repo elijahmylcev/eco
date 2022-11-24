@@ -1,10 +1,19 @@
 @media (max-width: 1100px) {
-  .wrapper__card_grid {
-    grid-auto-flow: inherit;
-  }
+  
+  .wrapper{
+    &__card{
+      &_grid{
+        grid-template-rows: minmax(20px, 90px);
+        grid-auto-flow: inherit;
+      }
+    }
+  } 
+
+  
 
   .eco__card {
     &_grid {
+      grid-template-rows: minmax(20px, 90px);
       grid-auto-flow: inherit;
     }
   }
@@ -22,7 +31,18 @@
   }
 }
 
+
+
 @media (max-width: 1025px) {
+  .wrapper__card_grid{
+    row-gap: 0;
+  }
+  .eco__card_grid{
+    row-gap: 0;
+  }
+}
+
+@media (max-width: 930px) {
   .eco__card_btn{
     width: 300px;
   }

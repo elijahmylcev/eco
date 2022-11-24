@@ -229,7 +229,7 @@
     &_grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(100px, 200px));
-      grid-template-rows: repeat(3, 96px);
+      grid-template-rows: repeat(3, minmax(20px, 96px));
       grid-auto-flow: column;
       row-gap: 18px;
      
