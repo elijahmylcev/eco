@@ -150,10 +150,9 @@
 
     &_grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(100px, 180px));
+      grid-template-columns: repeat(auto-fill, minmax(100px, 200px));
       grid-template-rows: repeat(3, 96px);
       grid-auto-flow: column;
-      column-gap: 42px;
       row-gap: 18px;
 
       &-bl {
@@ -229,10 +228,9 @@
 
     &_grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(100px, 180px));
+      grid-template-columns: repeat(auto-fill, minmax(100px, 200px));
       grid-template-rows: repeat(3, 96px);
       grid-auto-flow: column;
-      column-gap: 42px;
       row-gap: 18px;
 
       &-bl {
