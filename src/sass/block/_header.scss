@@ -20,6 +20,9 @@
       line-height: 24px;
       text-transform: uppercase;
       color: #41B619;
+      &:hover{
+        color:  #2D920A;
+      }
     }
     &-hamburger {
       display: none;
