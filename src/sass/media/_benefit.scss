@@ -9,13 +9,22 @@
     }
   } 
 
-  
 
-  .eco__card {
-    &_grid {
-      grid-template-rows: minmax(20px, 90px);
-      grid-auto-flow: inherit;
+  .eco{
+    &_img{
+      top: 80%;
+      transform: rotate3d(1, 1, 1, 45deg);
     }
+    &__card {
+      &_grid {
+        grid-template-rows: minmax(20px, 90px);
+        grid-auto-flow: inherit;
+      }
+
+      
+    }
+   
+
   }
 }
 
@@ -45,6 +54,12 @@
 @media (max-width: 930px) {
   .eco__card_btn{
     width: 300px;
+  }
+  .eco{
+    &_img{
+      top: 90%;
+      transform: rotate3d(1, 1, 1, 45deg);
+    }
   }
 }
 
