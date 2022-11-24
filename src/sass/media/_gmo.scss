@@ -1,23 +1,171 @@
 @media (max-width: 1400px) {
-  
+  .row{
+    padding-left: 20px;
+  }
+  .flat {
+    &__img{
+      width: 826px;
+    }
+    &::before{
+      left: 326px;
+      top: 59px;
+      width: 729px;
+    }
+    &::after{
+      left: 405px;
+      top: 5px;
+      width: 707px;
+    }
+    &__gif{
+      img{
+        width: 516px;
+      }
+    }
+  }
 }
 
 @media (max-width: 1200px) {
-
+  .flat {
+    &__img{
+      width: 629px;
+    }
+    &::before{
+      top: -49px;
+      width: 555px;
+      height: 523px;
+    }
+    &::after{
+      height: 280px;
+      left: 405px;
+      top: 136px;
+      width: 512px;
+    }
+    &__gif{
+      top: 34px;
+      right: -449px;
+      img{
+        width: 516px;
+      }
+    }
+  }
 }
 
 @media (max-width: 1024px) {
+  .flat {
+    &__img{
+      width: 564px;
+    }
+    &::before{
+      top: 17px;
+      width: 496px;
+      left: 326px;
+      height: 377px;
+    }
+    &::after{
+      height: 274px;
+      left: 415px;
+      top: 77px;
+      width: 449px;
+    }
 
+  }
 }
 
-@media (max-width: 768px) {
-
-}
-
-@media (max-width: 576px) {
-
-}
-
-@media (max-width: 425px) {
+@media (max-width: 991px) {
+  .gmo{
+    padding-top: 83px;
+    .flat {
+      &__img{
+        display: none;
+      }
+      &::before{
+        top: -40px;
+        width: 448px;
+        left: 352px;
+        height: 490px;
+      }
+      &::after{
+        height: 443px;
+        left: 388px;
+        top: -52px;
+        width: 379px;
+      }
+    }
+    .row{
+      display: flex;
+      flex-direction: column-reverse;
+      row-gap: 20px;
+      .mobailimg{
+        display: block;
   
+      }
+    }
+  }
+ 
+  
+}
+
+@media (max-width: 900px) {
+  .gmo{
+   
+    .flat {
+      border-radius: 0 0 24px 24px;
+      margin: 0 auto;
+      &::before{
+      display: none;
+      }
+      &::after{
+      display: none;
+      }
+      &__gif{
+        display: none;
+      }
+    }
+    .row{
+      padding-left: 0;
+      row-gap: 0;
+      .mobailimg{
+        margin: 0 auto;
+        transform: translateY(8px);
+        max-width: 451px;
+        z-index: -1;
+      }
+    }
+ 
+  }
+}
+
+@media (max-width: 465px) {
+  .flat{
+   
+    padding: 24px 18px;
+    &__range{
+      .price-input {
+        .field {
+          font-size: 14px;
+        }
+      }
+    }
+    &__title{
+      font-size: 24px;
+    }
+    &__subtitle{
+      font-size: 14px;
+    }
+    &__price{
+      font-size: 14px;
+    }
+    &__term{
+      font-size: 14px;
+    }
+    &__years{
+      &_year{
+        .form_radio_btn-year{
+          label{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
 }
