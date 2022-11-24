@@ -167,13 +167,10 @@
         background: #F1F2F2;
         border-radius: 16px;
         font-size: 16px;
-        &.active {
-          border-bottom: none;
-          font-weight: 700;
-          font-size: 20px;
-          line-height: 28px;
-          letter-spacing: 0.02em;
+        &:hover {
+          text-shadow: 0 0 .85px #41B619, 0 0 .85px #41B619;
           color: #41B619;
+          border-bottom: none;
           background-color: #E2F5DB;
         }
       }
