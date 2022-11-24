@@ -17,6 +17,8 @@
       width: 707px;
     }
     &__gif{
+      top: 34px;
+      right: -493px;
       img{
         width: 516px;
       }
@@ -137,7 +139,7 @@
 
 @media (max-width: 465px) {
   .flat{
-   
+   width: 94%;
     padding: 24px 18px;
     &__range{
       .price-input {
@@ -163,6 +165,19 @@
         .form_radio_btn-year{
           label{
             font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 330px){
+  .flat{
+    &__years{
+      &_year{
+        .form_radio_btn-year{
+          label{
+            font-size: 12px;
           }
         }
       }
