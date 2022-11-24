@@ -9,12 +9,12 @@ window.addEventListener('DOMContentLoaded', () => {
         input.addEventListener("input", e => {
             let minPrice = parseInt(priceInput[0].value);
             let maxPrice = parseInt(priceInput[1].value);
-            
+
             if ((maxPrice - minPrice >= priceGap) && maxPrice <= rangeInput[1].max) {
-                if (e.target.className === "input-min"){
+                if (e.target.className === "input-min") {
                     rangeInput[0].value = minPrice;
                     range.style.left = `${(minVal / rangeInput[0].max) * 100}%`;
-                }else {
+                } else {
                     rangeInput[1].value = maxPrice;
                     range.style.right = `${100 - (maxVal / rangeInput[1].max) * 100}%`;
                 }
@@ -27,10 +27,10 @@ window.addEventListener('DOMContentLoaded', () => {
             let minVal = parseInt(rangeInput[0].value);
             let maxVal = parseInt(rangeInput[1].value);
 
-            if ((maxVal - minVal) < priceGap){
+            if ((maxVal - minVal) < priceGap) {
                 if (e.target.className === "range-min") {
                     rangeInput[0].value = maxVal - priceGap
-                } else{
+                } else {
                     rangeInput[1].value = minVal + priceGap;
                 }
             } else {
@@ -47,6 +47,9 @@ window.addEventListener('DOMContentLoaded', () => {
         menu.style.height = `0px`;
         menu.style.padding = '0';
         hamburger.classList.toggle('header__menu-hamburger-active');
+        if (hamburger.classList.contains('header__menu-hamburger-active')) {
+            hamburger.classList.toggle('header__menu-hamburger-active')
+        }
         overlay.classList.remove('menu__overlay_active')
     }
 
@@ -63,7 +66,7 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         })
     })
-    
+
     overlay.addEventListener('click', (e) => {
         if (e.target.classList.contains('menu__overlay_active')) {
             closeMenu()
@@ -87,7 +90,10 @@ window.addEventListener('DOMContentLoaded', () => {
         // menu.classList.toggle('mobile__menu-active');
     });
 
+    const myCarouselElement = document.querySelector('#carouselExampleIndicators')
+    const carousel = new bootstrap.Carousel(myCarouselElement, {
+        touch: true
+    });
+
 
 })
-
-

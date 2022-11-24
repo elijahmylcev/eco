@@ -43,8 +43,7 @@
       }
       &.active {
         border-bottom: 2px solid #41B619;
-        font-weight: 700;
-        font-size: 20px;
+        text-shadow: 0 0 .85px #41B619, 0 0 .85px #41B619;
         line-height: 28px;
         letter-spacing: 0.02em;
         color: #41B619;
