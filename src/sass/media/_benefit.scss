@@ -173,6 +173,12 @@
           border-bottom: none;
           background-color: #E2F5DB;
         }
+        &.active {
+          text-shadow: 0 0 .85px #41B619, 0 0 .85px #41B619;
+          color: #41B619;
+          border-bottom: none;
+          background-color: #E2F5DB;
+        }
       }
     }
 

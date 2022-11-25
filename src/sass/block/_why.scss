@@ -29,7 +29,6 @@
     &-item {
       margin-top: 60px;
       position: relative;
-      min-height: 390px !important;
       img {
         position: absolute;
         top: -56px;
@@ -75,11 +74,7 @@
     grid-template-rows: repeat(2, minmax(232px, auto));
     column-gap: 28px;
     row-gap: 66px;
-    // &_img{
-    //   position: absolute;
-    //   transform: translateY(-53%);
-    //   right: -473px;
-    // }
+
 
     &_card {
       margin-top: 50px;

@@ -92,7 +92,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const myCarouselElement = document.querySelector('#carouselExampleIndicators')
     const carousel = new bootstrap.Carousel(myCarouselElement, {
-        touch: true
+        dots: true
     });
 
 
