@@ -97,6 +97,4 @@ window.addEventListener('DOMContentLoaded', () => {
         arrows: false
      }
      );
-    
-
 })
