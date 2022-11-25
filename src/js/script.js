@@ -90,10 +90,22 @@ window.addEventListener('DOMContentLoaded', () => {
         // menu.classList.toggle('mobile__menu-active');
     });
 
-    const myCarouselElement = document.querySelector('#carouselExampleIndicators')
-    const carousel = new bootstrap.Carousel(myCarouselElement, {
-        dots: true
-    });
+    // const myCarouselElement = document.querySelector('#carouselExampleIndicators')
+    // const carousel = new bootstrap.Carousel(myCarouselElement, {
+    //     dots: true
+    // });
 
+
+
+     $('.car').slick({
+        infinite: true,
+        dots: true,
+        speed: 800,
+        arrows: false
+
+
+     }
+     );
+    
 
 })
