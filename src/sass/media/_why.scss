@@ -37,14 +37,14 @@
   .why{
     &__wrapper{
       display: none;
-    }
-    .carousel{
-      display: block;
-      .carousel-inner{
-        .carousel-item{
-          min-height: 260px;
-        }
+      &_card{
+       &-img{
+        width: 18%;
+       }
       }
+    }
+    .car{
+      display: block;
     }
   }
 
@@ -60,17 +60,24 @@
         top: -25px;
     }
   }
-  .carousel{
-    &-inner{
-      margin-top: 0;
-    }
-    &-item{
-      margin-top: 15px;
-      img{
-        width: 20%;
-        top: -15px;
-      }
+  &__wrapper{
+    &_card{
+     &-img{
+      width: 25%;
+     }
     }
   }
+  }
+}
+
+@media (max-width: 375px) {
+  .why{
+    &__wrapper{
+      &_card{
+       &-img{
+        width: 30%;
+       }
+      }
+    }
   }
 }
