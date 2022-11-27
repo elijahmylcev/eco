@@ -3,6 +3,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const rangeInput = document.querySelectorAll(".range-input input");
   const priceInput = document.querySelectorAll(".price-input input");
   const range = document.querySelector(".slider .progress");
+  const modals = document.querySelectorAll('.modal')
 
   let priceGap = 1000;
 
@@ -54,6 +55,13 @@ window.addEventListener('DOMContentLoaded', () => {
     overlay.classList.remove('menu__overlay_active')
   }
 
+  function closeModal() {
+    modals.forEach(modalWindow => {
+      if (modalWindow.classList.contains('show')) {
+        $(`#${modalWindow.id}`).modal('toggle')
+      }
+    })
+  }
 
   const menu = document.querySelector('.mobile__menu');
   const hamburger = document.querySelector('.header__menu-hamburger');
@@ -138,7 +146,6 @@ window.addEventListener('DOMContentLoaded', () => {
         'Content-Type': 'application/json',
         "Access-Control-Allow-Origin" : "*", 
         "Access-Control-Allow-Credentials" : true,
-        // 'Authorization': 'Bearer 709B0D21504685B87D27ADD360FA12E6'
       },
       body: JSON.stringify(data)
     });
@@ -160,12 +167,14 @@ window.addEventListener('DOMContentLoaded', () => {
           range_max
         } = objectQuery
         const comment = `Ожидаемое кол-во комнат: ${count_room}; Срок сдачи: ${year_value}; Диапазон цен на недвижимость: от ${range_min}млн.₽ до ${range_max}млн.₽.`
+
         postData(`https://nerielt.app/api/create_lead?token=709B0D21504685B87D27ADD360FA12E6&name=${name}&phone=${phone}&source=${'https://ecoipoteka.com/'}&comment=${comment}`)
       } else {
         postData(`https://nerielt.app/api/create_lead?token=709B0D21504685B87D27ADD360FA12E6&name=${name}&phone=${phone}&source=${'https://ecoipoteka.com/'}`)
       }
       form.name.value = ''
       form.phone.value = ''
+      closeModal()
     })
   })
 })
