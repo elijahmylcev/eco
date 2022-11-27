@@ -28,47 +28,6 @@
     }
   }
 
-  // .carousel {
-  //   display: none;
-
-  //   &-inner {
-  //     margin-top: 50px;
-  //   }
-
-  //   &-indicators {
-  //     bottom: -40px;
-
-  //     button {
-  //       box-sizing: border-box;
-  //       height: 10px;
-  //       width: 10px;
-  //       border-top: none;
-  //       background: #c2c6c6;
-  //       border-radius: 50%;
-
-  //       &.active {
-  //         background: #41B619;
-  //       }
-  //     }
-  //   }
-
-  //   &-item {
-  //     margin-top: 60px;
-  //     position: relative;
-  //     img {
-  //       position: absolute;
-  //       top: -56px;
-  //       right: 0;
-  //     }
-
-  //     .why__wrapper_card {
-  //       &::after {
-  //         display: none;
-  //       }
-  //     }
-  //   }
-  // }
-
   &__title {
     position: relative;
     font-weight: 700;
@@ -87,8 +46,7 @@
       line-height: 54px;
       letter-spacing: 0.02em;
       text-transform: uppercase;
-      color: #7EDC5D;
-      opacity: 0.05;
+      color: rgba(126, 220, 93, 0.05);
     }
   }
 
