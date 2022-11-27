@@ -25,7 +25,7 @@ gulp.task('styles', function () {
         }).on('error', sass.logError))
         .pipe(autoprefixer({
             cascade: false,
-            browsers: ['last 25 versions']
+            browsers: ['last 7 versions']
         }))
         .pipe(rename({
             suffix: '.min',
