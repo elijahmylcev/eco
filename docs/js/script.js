@@ -103,7 +103,8 @@ window.addEventListener('DOMContentLoaded', () => {
     infinite: true,
     dots: true,
     speed: 800,
-    arrows: false
+    arrows: false,
+    autoplay: true
   });
 
   $('input[name=phone]').mask('+7 (999) 999 99 99');
