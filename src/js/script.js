@@ -174,11 +174,8 @@ window.addEventListener('DOMContentLoaded', () => {
         const comment = `Ожидаемое кол-во комнат: ${count_room}; Срок сдачи: ${year_value}; Диапазон цен на недвижимость: от ${range_min}млн.₽ до ${range_max}млн.₽.`
 
         postData(`https://nerielt.app/api/create_lead?token=709B0D21504685B87D27ADD360FA12E6&name=${name}&phone=${phone}&source=${'https://ecoipoteka.com/'}&comment=${comment}`)
-
-        postData(`https://smsc.ru/sys/send.php?login=nerielt&psw=legion92&phones=${phoneSms}&mes=test&charset=utf-8`)
       } else {
         postData(`https://nerielt.app/api/create_lead?token=709B0D21504685B87D27ADD360FA12E6&name=${name}&phone=${phone}&source=${'https://ecoipoteka.com/'}`)
-        postData(`https://smsc.ru/sys/send.php?login=nerielt&psw=legion92&phones=${phoneSms}&mes=Test&charset=utf-8`)
       }
       form.name.value = ''
       form.phone.value = ''
