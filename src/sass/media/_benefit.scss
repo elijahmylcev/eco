@@ -224,7 +224,10 @@
   .eco {
     padding: 6px;
     max-width: 100%;
-    position: unset;
+    position: inherit;
+    &_img{
+      display: none;
+    }
     &__card {
       &_title {
         margin-bottom: 0;
