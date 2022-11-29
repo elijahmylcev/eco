@@ -101,6 +101,7 @@
     .flat {
       border-radius: 0 0 24px 24px;
       margin: 0 auto;
+      position: inherit;
       &::before{
       display: none;
       }
