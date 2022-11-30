@@ -10,6 +10,20 @@
   margin: 0;
 }
 
+button {
+  border: none;
+  -webkit-border-image: none;
+}
+
+a {
+  border: none;
+  outline: none;
+}
+
+a:active {
+  border: none;
+  outline: none;
+}
 
 body{
   background-color: #fbfbfb;

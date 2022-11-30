@@ -56,6 +56,30 @@
 	<link rel="stylesheet" type="text/css" href="./css/slick.min.css">
 	<link rel="stylesheet" href="./css/style.min.css">
 	<title>ЭКОИПОТЕКА</title>
+
+	<script>
+		(function (w, d, s, o) {
+			var j = d.createElement(s);
+			j.async = true;
+			j.src = '//script.marquiz.ru/v2.js';
+			j.onload = function () {
+				if (document.readyState !== 'loading') Marquiz.init(o);
+				else document.addEventListener("DOMContentLoaded", function () {
+					Marquiz.init(o);
+				});
+			};
+			d.head.insertBefore(j, d.head.firstElementChild);
+		})(window, document, 'script', {
+			host: '//quiz.marquiz.ru',
+			region: 'eu',
+			id: '63866a6e43c66e004e521590',
+			autoOpen: 15,
+			autoOpenFreq: 'once',
+			openOnExit: true,
+			disableOnMobile: true
+		});
+	</script>
+
 </head>
 
 <body>
@@ -1181,7 +1205,8 @@
 					<div class="flat__gif">
 						<img src="./gif/belka_new.gif" alt="gif">
 					</div>
-					<button class="flat__btn" type="button" data-bs-toggle="modal" data-bs-target="#query">Выбрать
+					<button class="flat__btn" type="button" data-bs-toggle="modal"
+						data-bs-target="#query">Выбрать
 						квартиру</button>
 
 					<!-- <div class="flat__btn">Выбрать квартиру</div> -->
