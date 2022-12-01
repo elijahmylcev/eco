@@ -300,8 +300,19 @@
     }
 
     &__img {
-      top: 273px;
+      top: 215px;
       width: 292px;
+    }
+  }
+}
+
+
+@media (max-width: 385px) {
+ 
+  .content {
+    
+    &__img {
+      top: 260px;
     }
   }
 }
