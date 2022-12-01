@@ -3,7 +3,7 @@
   .wrapper{
     &__card{
       &_grid{
-        grid-template-rows: minmax(20px, 90px);
+        grid-template-rows: auto;
         grid-auto-flow: inherit;
       }
     }
@@ -17,7 +17,7 @@
     }
     &__card {
       &_grid {
-        grid-template-rows: minmax(20px, 90px);
+        grid-template-rows: auto;
         grid-auto-flow: inherit;
       }
 
@@ -38,11 +38,6 @@
       grid-auto-flow: inherit;
     }
   }
-}
-
-
-
-@media (max-width: 1025px) {
   .wrapper__card_grid{
     row-gap: 0;
   }
@@ -50,6 +45,9 @@
     row-gap: 0;
   }
 }
+
+
+
 
 @media (max-width: 930px) {
   .eco__card_btn{
@@ -188,13 +186,15 @@
   }
 
   .wrapper {
-    padding: 6px;
+    padding: 6px 6px 20px;
     max-width: 100%;
 
     &__card {
-   
+      &_title{
+        line-height: 20px;
+      }
       &_grid {
-        row-gap: 12px;
+        row-gap: 6px;
 
         &-bl {
           &-title {
@@ -202,7 +202,8 @@
           }
 
           &-number {
-            font-size: 20px;
+            font-size: 12px;
+            line-height: 7px;
           }
 
           &-descr {
@@ -223,7 +224,7 @@
   }
 
   .eco {
-    padding: 6px;
+    padding: 6px 6px 20px;
     max-width: 100%;
     position: inherit;
     &_img{
@@ -231,11 +232,12 @@
     }
     &__card {
       &_title {
-        margin-bottom: 0;
+        font-size: 17px;
+        line-height: 20px;
       }
 
       &_grid {
-        row-gap: 12px;
+        row-gap: 6px;
 
         &-bl {
           &-title {
@@ -243,7 +245,8 @@
           }
 
           &-number {
-            font-size: 20px;
+            font-size: 12px;
+            line-height: 7px;
           }
 
           &-descr {
@@ -262,10 +265,10 @@
 }
 
 @media (max-width: 389px) {
-  .eco {
+  .eco {  
     &__card {
       &_title {
-        margin-bottom: 27px;
+        margin-bottom: 20px;
       }
     }
   }
