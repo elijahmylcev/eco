@@ -163,7 +163,8 @@ window.addEventListener('DOMContentLoaded', () => {
       const objectQuery = formQuery(form)
       const name = form.name.value;
       const phone = form.phone.value;
-      const phoneSms = clearNumber(phone)
+      // const phoneSms = clearNumber(phone)
+      const question = 'Отправить ссылку на подборку в WhatsApp: https://vk.cc/cj8fO4'
       if (objectQuery) {
         const {
           count_room,
@@ -173,9 +174,9 @@ window.addEventListener('DOMContentLoaded', () => {
         } = objectQuery
         const comment = `Ожидаемое кол-во комнат: ${count_room}; Срок сдачи: ${year_value}; Диапазон цен на недвижимость: от ${range_min}млн.₽ до ${range_max}млн.₽.`
 
-        postData(`https://nerielt.app/api/create_lead?token=709B0D21504685B87D27ADD360FA12E6&name=${name}&phone=${phone}&source=${'https://ecoipoteka.com/'}&comment=${comment}`)
+        postData(`https://nerielt.app/api/create_lead?token=709B0D21504685B87D27ADD360FA12E6&name=${name}&phone=${phone}&source=${'https://ecoipoteka.com/'}&comment=${comment}&question=${question}`)
       } else {
-        postData(`https://nerielt.app/api/create_lead?token=709B0D21504685B87D27ADD360FA12E6&name=${name}&phone=${phone}&source=${'https://ecoipoteka.com/'}`)
+        postData(`https://nerielt.app/api/create_lead?token=709B0D21504685B87D27ADD360FA12E6&name=${name}&phone=${phone}&source=${'https://ecoipoteka.com/'}&question=${question}`)
       }
       form.name.value = ''
       form.phone.value = ''
