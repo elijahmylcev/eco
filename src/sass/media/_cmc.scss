@@ -1,23 +1,24 @@
-
-
 @media (max-width: 1200px) {
-  .cmc{
-    .impl{
-      &__fon{
+  .cmc {
+    .impl {
+      &__fon {
         column-gap: 20px;
-        &_item{
-          &-title{
+
+        &_item {
+          &-title {
             font-size: 26px;
           }
-          &-descr{
-            &-text{
+
+          &-descr {
+            &-text {
               font-size: 14px;
             }
-            &-btn{
+
+            &-btn {
               font-size: 12px;
             }
           }
-         
+
         }
       }
     }
@@ -25,25 +26,34 @@
 }
 
 @media (max-width: 1023px) {
-  .cmc{
-    .impl{
-      &__fon{
+  .cmc {
+    .impl {
+      &__fon {
         grid-template-columns: 1fr;
         row-gap: 10px;
-        &_img{
+
+        &_img {
           display: none;
         }
-        &_item{
-          &-title{
+
+        &_iframe {
+          display: none;
+        }
+
+        &_item {
+          &-title {
             display: none;
-            &.grid{
+
+            &.grid {
               display: block;
             }
           }
-          &-descr{
-            &-btn{
+
+          &-descr {
+            &-btn {
               display: none;
-              &.grid{
+
+              &.grid {
                 display: block;
                 margin: 0 auto;
                 margin-top: 20px;
@@ -51,9 +61,14 @@
             }
           }
         }
-      
-        &_gif{
+
+        &_gif {
+          display: block;
           grid-row: 1 / 2;
+
+          iframe {
+            border-radius: 24px;
+          }
         }
       }
     }
@@ -61,13 +76,15 @@
 }
 
 @media (max-width: 576px) {
-  .cmc{
-    .impl__fon_item-title{
+  .cmc {
+    .impl__fon_item-title {
       font-size: 20px;
     }
-    .impl{
+
+    .impl {
       padding: 0;
-      &__fon{
+
+      &__fon {
         padding: 37px 25px;
       }
     }
@@ -75,28 +92,38 @@
 }
 
 @media (max-width: 400px) {
-  .cmc{
-    .impl{
-      &__fon{
+  .cmc {
+    .impl {
+      &__fon {
         padding: 12px 10px;
-        &_item{
-          &-descr{
+
+        &_item {
+          &-descr {
             margin-top: 8px;
             padding: 13px 14px;
-            &-btn{
+
+            &-btn {
               padding: 18px 12px;
               font-size: 12px;
             }
-            &-text{
+
+            &-text {
               font-size: 11px;
             }
           }
-          &-title{
+
+          &-title {
             font-size: 16px;
           }
         }
       }
-    
+
     }
+  }
+}
+
+@media (max-width: 360px) {
+  .impl__fon_item-descr-btn.grid {
+    font-size: 10px;
   }
 }

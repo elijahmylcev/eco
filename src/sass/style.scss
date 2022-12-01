@@ -13,6 +13,19 @@
 button {
   border: none;
   -webkit-border-image: none;
+  outline: none;
+} button:active {
+  border: none;
+  -webkit-border-image: none;
+  outline: none;
+}
+
+input {
+  outline: none;
+}
+
+input:focus {
+  outline: none;
 }
 
 a {
