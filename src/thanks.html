@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="57x57" href="./icons/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="./icons/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="./icons/favicon/android-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="./icons/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="./icons/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="./icons/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="./icons/favicon/android-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="./icons/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./icons/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="./icons/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="./icons/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+  <title>Спасибо за заявку</title>
+  <style>
+    body {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f1f2f2;
+    }
+
+    .thanks {
+      border-radius: 24px;
+      padding: 30px;
+      margin: 0 auto;
+      text-align: center;
+      background-color: #e2f5db;
+    }
+
+    button {
+      padding: 18px 24px;
+      margin-top: 42px;
+      width: 350px;
+      height: 56px;
+      border-radius: 20px;
+      background: #41B619;
+      border: none;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: #FFFFFF;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    button:hover {
+      background: #2D920A;
+      color: #FFFFFF;
+      transition: all 200ms ease;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="thanks">
+    <h2>Спасибо, Ваша заявка принята!</h2>
+    <img src="./img/95.png" alt="icon" class="icon">
+    <div class="description">
+      Мы скоро с вами свяжемся!
+    </div>
+    <button>Вернуться на главную страницу</button>
+  </div>
+
+  <!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+		(function (m, e, t, r, i, k, a) {
+			m[i] = m[i]
+
+			function () {
+				(m[i].a = m[i].a[]).push(arguments)
+			};
+			m[i].l = 1 * new Date();
+			for (var j = 0; j < document.scripts.length; j++) {
+				if (document.scripts[j].src === r) {
+					return;
+				}
+			}
+			k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+		})
+		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+		ym(91506104, "init", {
+			clickmap: true,
+			trackLinks: true,
+			accurateTrackBounce: true,
+			webvisor: true
+		});
+	</script>
+	<noscript>
+		<div><img src="https://mc.yandex.ru/watch/91506104" style="position:absolute; left:-9999px;" alt="" /></div>
+	</noscript>
+	<!-- /Yandex.Metrika counter -->
+
+  <script type="text/javascript">
+    window.addEventListener('DOMContentLoaded', () => {
+      const btn = document.querySelector('button')
+      btn.addEventListener('click', () => {
+        console.log('hello')
+        window.location = "/";
+      })
+    })
+  </script>
+</body>
+
+</html>

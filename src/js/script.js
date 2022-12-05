@@ -145,11 +145,11 @@ window.addEventListener('DOMContentLoaded', () => {
       mode: 'no-cors',
       headers: {
         'Content-Type': 'application/json',
-        "Access-Control-Allow-Origin" : "*", 
-        "Access-Control-Allow-Credentials" : true,
+        "Access-Control-Allow-Origin": '*',
+        "Access-Control-Allow-Credentials": true,
       },
       body: JSON.stringify(data)
-    });
+    })
     return response;
   }
 
@@ -175,8 +175,14 @@ window.addEventListener('DOMContentLoaded', () => {
         const comment = `Ожидаемое кол-во комнат: ${count_room}; Срок сдачи: ${year_value}; Диапазон цен на недвижимость: от ${range_min}млн.₽ до ${range_max}млн.₽.`
 
         postData(`https://nerielt.app/api/create_lead?token=709B0D21504685B87D27ADD360FA12E6&name=${name}&phone=${phone}&source=${'https://ecoipoteka.com/'}&comment=${comment}&question=${question}`)
+          .then((res) => {
+            window.location = "/thanks.html";
+          })
       } else {
         postData(`https://nerielt.app/api/create_lead?token=709B0D21504685B87D27ADD360FA12E6&name=${name}&phone=${phone}&source=${'https://ecoipoteka.com/'}&question=${question}`)
+          .then((res) => {
+            window.location = "/thanks.html";
+          })
       }
       form.name.value = ''
       form.phone.value = ''
